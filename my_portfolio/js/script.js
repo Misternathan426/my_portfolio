@@ -26,19 +26,19 @@ darkToggle.addEventListener('click', () => {
 });
 
 
-
-
-
-
 // Hamburger menu functionality
-const hamburgerMenu = document.querySelector('.hamburger-menu');
-const navLinks = document.querySelector('.nav-links');
+console.log("DOM Content Loaded. Script is running");
+
+const hamburgerMenu = document.querySelector('hamburger-menu');
+const navLinks = document.querySelector('nav-links');
+
+console.log("Hamburger Menu elements;", hamburgerMenu);
+console.log("Nav Links elements", navLinks);
 
     if (hamburgerMenu && navLinks) {
-    hamburger.addEventListener('click', () => {
-        hamburgerMenu.classList.toggle('active');
-        navLinks.classList.toggle('active');
-    });
-    } else {
-        console.error("HamburgerMenu or NavLinks element not found.");
+        hamburgerMenu.addEventListener('click', () => {
+            console.log("Hamburger Menu clicked!");
+            hamburgerMenu.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
     }

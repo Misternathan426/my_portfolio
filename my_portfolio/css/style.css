@@ -11,13 +11,18 @@ body {
     line-height: 1.6;
 }
 
+body.dark-mode {
+    background: #121212;
+    color: #f1f1f1;
+}
+
 .dark_toggle {
     background-color: #333;
     color: #fff;
 }
 
 header {
-    background-color: #f4f4f4;
+    background-color: #f1f1f1;
     padding: 1em 2em;
 }
     .main-nav {
@@ -84,7 +89,6 @@ section {
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
         &:hover {
             transform: translateY(-5px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -98,7 +102,7 @@ section {
             font-size: 1em;
             color: #666;
         }
-
+    }
 
 .skill-grid {
     display: flex;
@@ -107,23 +111,30 @@ section {
 }
 
 span {
+    display: inline-block;
     background: #6c63ff;
     color: white;
-    padding: 0.5em 1em;
+    padding: .5em 1em;
     border-radius: 20px;
+    margin-top: 20px;
     font-size: 0.9em;
 }
 
+.contact-links {
+    text-align: left;
+    margin-top: 20px;
+
+}
 .contact-links a {
-    background: #6c63ff;
-    color: white;
-    padding: 0.7em 1.2em;
-    border-radius: 5px;
+    font-size: 2em;
+    margin: 0 15px;
+    color: #3b82f6;
     text-decoration: none;
-    transition: background 0.3s ease;
+    transition: transform 0.2s, color 0.2s;
 }
 .contact-links a:hover {
-    background: #5750d4;
+    transform: scale(1.2);
+    color: #1d4ed8;
 }
 
 footer {
