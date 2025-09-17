@@ -25,20 +25,3 @@ darkToggle.addEventListener('click', () => {
     }
 });
 
-
-// Hamburger menu functionality
-console.log("DOM Content Loaded. Script is running");
-
-const hamburgerMenu = document.querySelector('hamburger-menu');
-const navLinks = document.querySelector('nav-links');
-
-console.log("Hamburger Menu elements;", hamburgerMenu);
-console.log("Nav Links elements", navLinks);
-
-    if (hamburgerMenu && navLinks) {
-        hamburgerMenu.addEventListener('click', () => {
-            console.log("Hamburger Menu clicked!");
-            hamburgerMenu.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-    }
