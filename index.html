@@ -9,11 +9,14 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet">
-	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
 </head>
 <body>
+	<!-- Dark Mode -->
 	<button id="dark_toggle" title="Toggle Dark Mode">🌙</button>
 
+	<!-- Navbar-->
 	<nav class="navbar">
 		<div class="logo">
 			<a href="#home">Nathan<span>.dev</span></a>
@@ -27,9 +30,29 @@
 		</ul>
 		<div class="menu-toggle" id="menuToggle">&#9776</div>
 	</nav>
-    <section id="about">
-		<h2>About Me</h2>
-		<p>Hi, I'm Nathan - a junior web developer exploring AI + Web Development. I'm passionate about building smart, interactive, and user-friendly web apps</p>
+		
+	<!-- About Me -->
+	<section class="about-card" id="about">
+		<div class="about-header">
+			<div class="avatar">NJ</div>
+			<div>
+				<h2>About Me</h2>
+				<p class="subtitle">AI + Web Developer</p>
+			</div>
+		</div>
+
+		<p>
+			Hi - I'm <strong>Nathan</strong>, an <strong>AI + Web Developer</strong> who turns ideas into smart, responsive, and modern digital experience. I build clean, user-friendly websites while exploring how AI can power the next generation of the web.
+		</p>
+
+		<div class="skills">
+			<div class="chip">HTML</div>
+			<div class="chip">CSS</div>
+			<div class="chip">JavaScript</div>
+			<div class="chip">React</div>
+			<div class="chip">Python</div>
+			<div class="chip">OpenAI API</div>
+		</div>
 	</section>
 
 	<section id="projects">
@@ -48,19 +71,6 @@
 				<h3>Responsive Portfolio</h3>
 				<p>A clean, responsive site showcasing my projects and skills.</p>
 			</div>
-		</div>
-	</section>
-
-	<section id="skills">
-		<h2>Skills</h2>
-		<div class="skills-grid">
-			<span>HTML</span>
-			<span>CSS</span>
-			<span>JavaScript</span>
-			<span>React</span>
-			<span>Node.js</span>
-			<span>Python</span>
-			<span>AI APIs</span>
 		</div>
 	</section>
 

@@ -4,11 +4,19 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
 
 body {
-    background-color: #f4f4f4;
+    background-color: white;
     color: #333;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 body.dark-mode {
@@ -43,7 +51,7 @@ body.dark-mode {
 .logo a {
     font-size: 22px;
     font-weight: bold;
-
+    color: #6c63ff;
     text-decoration: none;
 }
 
@@ -61,7 +69,7 @@ body.dark-mode {
 
 .nav-links li a {
     text-decoration: none;
-    color: #333;
+    color: #1d4ed8;
     font-weight: 500;
     transition: 0.3s;
 }
@@ -75,6 +83,83 @@ body.dark-mode {
     display: none;
     font-size: 26px;
     cursor: pointer;
+}
+
+
+/* About Me section */
+.about-card {
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.about-header {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.about-card h2 {
+    font-size: 1.6em;
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+.about-card .subtitle {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-top: 0.2em;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #111, #1b1b1b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+}
+
+.about-card p {
+    line-height: 1.6;
+    margin-bottom: 1.2em;
+}
+
+.about-card .skill {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6em;
+}
+
+.about-card .chip {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 0.4em 0.8em;
+    border-radius: 999px;
+    font-size: 0.85em;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.about-card .chip:hover {
+    background: rgba(255,255,255,0.01);
+    transform: scale(1.05);
 }
 
 section {
@@ -118,12 +203,6 @@ section {
             color: #666;
         }
     }
-
-.skill-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.8em;
-}
 
 span {
     display: inline-block;
@@ -192,5 +271,11 @@ footer {
 
     .menu-toggle {
         display: block;
+    }
+
+    .about-card {
+        max-width: 100%;
+        padding: 1.5em;
+        width: 95%;
     }
 }
