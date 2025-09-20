@@ -1,22 +1,21 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
-html {
-    scroll-behavior: smooth;
 }
 
 section {
     scroll-margin-top: 80px;
 }
 
-body {
+html, body {
     background-color: white;
     color: #333;
     margin: 0;
     padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+     scroll-behavior: smooth;
 }
 
 body.dark-mode {
@@ -30,6 +29,8 @@ body.dark-mode {
     color: #fff;
 }
 
+
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -87,6 +88,12 @@ body.dark-mode {
 
 
 /* About Me section */
+#about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
 .about-card {
     background: rgba(255,255,255,0.02);
     border: 1px solid rgba(255,255,255,0.08);
@@ -253,6 +260,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+    #about {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 2em;
+    }
     .nav-links {
         position: absolute;
         top: 60px;
