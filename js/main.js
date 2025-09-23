@@ -10,6 +10,7 @@ const darkToggle = document.getElementById('dark_toggle');
             document.body.classList.remove('dark-mode');
             darkToggle.textContent = '🌙';
         }
+// Stays When you reload the website
 darkToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     if (document.body.classList.contains('dark-mode')) {
@@ -37,7 +38,7 @@ if (menuToggle && navLinks) {
     });
 
     // Close menu when clicking a link
-    const links = navLinks.querySelector('a');
+    const links = navLinks.querySelectorAll('a');
     links.forEach(link => {
         link.addEventListener('click', () =>{
             navLinks.classList.remove('show');

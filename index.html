@@ -12,11 +12,8 @@
 	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
 </head>
 <body>
-	<!-- Dark Mode -->
-	<button id="dark_toggle" title="Toggle Dark Mode">🌙</button>
-
 	<!-- Navbar-->
-	<nav class="navbar">
+	<nav class="navbar" id="link">
 		<div class="logo">
 			<a href="#home">Nathan<span>.dev</span></a>
 		</div>
@@ -27,6 +24,8 @@
 			<li><a href="#projects">Projects</a></li>
 			<li><a href="#resume">Resume</a></li>
 			<li><a href="#contact">Contact</a></li>
+			<!-- Dark Mode Toggle -->
+			<button id="dark_toggle" title="Toggle Dark Mode">🌙</button>
 		</ul>
 		<div class="menu-toggle" id="menuToggle">&#9776;</div>
 	</nav>
@@ -34,7 +33,12 @@
 	<!-- About Me -->
 	<section class="about-card" id="about">
 		<div class="about-header">
-			<div class="avatar">NJ</div>
+			<div class="avatar-container">
+				<div class="avatar-wrapper">
+					<img src="img/profile.png" alt="My Avatar" class="avatar">
+					<span style='font-size:50px;' class="hand">&#x1F44B;</span>
+				</div>
+			</div>
 			<div>
 				<h2>About Me</h2>
 				<p class="subtitle">AI + Web Developer</p>
@@ -59,7 +63,7 @@
 				<p>CSS</p>
 			</div>
 			<div class="skill-card">
-				<img src="img/javascript.svg" alt="javascript Logo">
+				<img src="img/javascript.svg" alt="JavaScript Logo">
 				<p>JavaScript</p>
 			</div>
 			<div class="skill-card">
@@ -76,6 +80,7 @@
 			</div>
 		</div>
 	</section>
+
 
 	<!-- Projects -->
 	<section id="projects">
